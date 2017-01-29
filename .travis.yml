@@ -12,7 +12,7 @@ env:
   - CI_ENV=testing
  
 before_install:
-  - sudo apt-get install git-ftp
+  - sudo apt-get install lftp
   
 before_script:
   - composer update
