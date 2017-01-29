@@ -1,6 +1,2 @@
 # Setup
-git config git-ftp.url FTP_HOST
-git config git-ftp.user FTP_USER
-git config git-ftp.password FTP_PASS
-
-lftp -c "open -u FTP_USER,FTP_PASS FTP_HOST; set ssl:verify-certificate no; mirror -R ./ FTP_HOST/public_html"
+lftp -c "open -u $FTP_USER,$FTP_PASS $FTP_HOST; set ssl:verify-certificate no; mirror -R ./ $FTP_HOST/public_html"
